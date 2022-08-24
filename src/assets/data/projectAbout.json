@@ -1,0 +1,11 @@
+{ 
+    "name": "sebraelab",    
+    "summary": "sebraelab",     
+    "images":["assets/banners/1.png", 
+        "assets/banners/2.png",
+        "assets/banners/3.png"
+    ]
+}
+
+ 
+            
