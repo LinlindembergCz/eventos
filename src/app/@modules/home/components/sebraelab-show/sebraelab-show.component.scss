@@ -75,21 +75,29 @@ flex-grow: 0;
 
 .frameButton{
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px 24px;
-gap: 8px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 8px;
+  width: 416px;
+  height: 57px;
+  /* Cores da Marca/Cores principais/Amarelo */
+  border-radius: 8px;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
 
-width: 416px;
-height: 57px;
-
-/* Cores da Marca/Cores principais/Amarelo */
-background: #FFF028;
-border-radius: 8px;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
+.buttonSaibaMais{
+  width: 416px;
+  height: 57px;
+  background: #FFF028; 
+  color:black; 
+  border: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
 }
