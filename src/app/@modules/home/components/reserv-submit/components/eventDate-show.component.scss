@@ -1,0 +1,116 @@
+.frameMain{display: flex;
+    //backgroundborder: 1px solid;
+    flex-direction: row;
+    align-items: flex-start;
+    //padding: 24px;
+    //gap: 22px;
+    
+    position: relative;
+    width: 600px;
+    height: 375px;
+    
+    /* Tailwind/white */
+    background: #FFFFFF;
+    
+    /* dropdown */
+   // box-shadow: 2px 16px 19px rgba(0, 0, 0, 0.09);
+   // border-radius: 8px;
+}
+
+.frameOptions{display: flex;
+    //border: 1px solid;
+    flex-direction: column;
+    //justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    //gap: 32px;    
+    width: 220px;
+    height: 310px;   
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.frameOptionsHead{display: flex;
+    //border: 1px solid;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    //gap: 8px;
+    
+    width: 215px;
+    height: 51px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.frameOptionsBody{
+    //border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 215px;
+    height: 200px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    //align-self: stretch;
+    flex-grow: 0;
+}
+
+.frameOptionsButtonApply{//box-sizing: border-box;
+    //border: 1px solid;
+    /* Auto layout */
+    display: flex;
+    //flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    //padding: 8px 16px;
+    //gap: 8px;
+    
+    width: 215px;
+    height: 36px;
+    
+    /* Cores da Marca/Tipografia/Preto */
+    border: 1px solid #263746;
+    border-radius: 8px;
+}
+
+.frameCalendar{display: flex;
+    //@debug: column;
+    align-items: right;
+    padding: 0px;
+    gap: 22px;    
+    width: 259px;
+    height: 262px;   
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.buttonApply{
+    width: 215px;
+    height: 36px;
+    background: #FFF028; 
+    color:black; 
+    border: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .frameDivisor{
+  height:100%;
+  }

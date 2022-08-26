@@ -11,6 +11,7 @@ import {EventoslabShowComponent } from './components/eventoslab-show/eventoslab-
 import {ReservSubmitComponent } from './components/reserv-submit/reserv-submit.component';
 import { ContactSubmitComponent } from './components/contact-submit/contact-submit.component';
 import {EcosystemShowComponent } from './components/ecosystem-show/ecosystem-show.component';
+import {EventDateComponent } from './components/reserv-submit/components/eventDate-show.component'; 
 
 import { FooterModule } from 'src/app/@layout/footer/footer.module';
 import { HeaderModule } from 'src/app/@layout/header/header.module';
@@ -26,12 +27,14 @@ import { CalendarModule } from 'primeng/calendar';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { InputMaskModule } from 'primeng/inputmask';
+import { DialogModule } from 'primeng/dialog';
+import {RadioButtonModule} from 'primeng/radiobutton';
 
 @NgModule({
   declarations: [IndexComponent, 
      BannersShowComponent,SebraelabShowComponent, ContentShowComponent,
      EventoslabShowComponent, ReservSubmitComponent,ContactSubmitComponent,
-     EcosystemShowComponent   
+     EcosystemShowComponent  ,EventDateComponent 
     ],
   imports: [
     CommonModule,
@@ -52,6 +55,9 @@ import { InputMaskModule } from 'primeng/inputmask';
     InputMaskModule, 
     FooterModule,
     HeaderModule,
+    DialogModule,
+    RadioButtonModule
+    
   ],
   providers: []
 })

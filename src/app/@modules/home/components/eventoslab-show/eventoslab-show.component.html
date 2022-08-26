@@ -25,33 +25,34 @@
                         
             <div class="frameEventslablist">
                 
-                <div class="frameEventlabItemGroup">                    
+             <!--<div class="frameEventlabItemGroup">-->                 
                     <p-dataView [value]="eventslab">
                         <ng-template let-eventlab pTemplate="listItem">              
                             <div class="frameEventlabItem">                         
                                    <div class="frameEventlabitemDetails">                                    
                                         <div class="frameEventlabitemDetailsCenter">
                                             <div class="frameDate">
-                                                {{eventlab.dateStart}}-{{eventlab.dateEnd}}
+                                               <div class="frameDateDays"> {{eventlab.dateStart}}<div style=" color: #C45F13;">></div>{{eventlab.dateEnd}}</div> 
                                             </div>                                    
                                             <p-divider layout="vertical" class="frameDivisor"></p-divider>
+
                                             <div class="frameHour">
+
                                                 <div class="eventlabTime">{{eventlab.hourStart}} - {{eventlab.hourEnd}}</div><br>
                                                 <div class=" eventlabName">{{eventlab.name}}</div><br>
                                                 <div class="eventlabSummary">{{eventlab.summary}}</div><br>
                                             </div>        
-                                        </div>    
+                                        </div>                                         
                                         <div class="frameEventlabSubscribe">
-                                            <labe>Inscreva-se ></labe>
+                                            Inscreva-se >
                                         </div>                      
                                     </div>
                                                       
                                 </div>  
                                 <div style="background: #F8FAFC">&nbsp;&nbsp;&nbsp;</div>             
                        </ng-template>
-                    </p-dataView>
-                    
-                </div>
+                    </p-dataView>                    
+                <!--</div>-->
             </div>
             <div class="confira">confira nossa agenda!<img src="/assets/imgs/arrow-right.png"/></div>
         </div>

@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservSubmitComponent implements OnInit {
 
+  DialogEventDateShowing: Boolean = false;
+  
   ngOnInit(): void {   
+  }
+
+  ShowDialogEventDate()
+  {
+    this.DialogEventDateShowing = true;
   }
 
 

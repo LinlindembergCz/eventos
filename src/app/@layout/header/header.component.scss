@@ -272,7 +272,63 @@ li a:hover, .dropdown:hover .dropbtn {
     /* Inside auto layout */
     flex: none;
     order: 1;
+    flex-grow: 0;
+}
+
+.frameRealize{display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 8px;
+    
+    width: 180px;
+    height: 36px;
+    
+    /* Cores da Marca/Variações da Marca/Amarelo/2 */
+    background: #E9CF2E;
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+
+    /* identical to box height, or 20px */
+    text-align: center;
+
+    /* Cores da Marca/Tipografia/Preto */
+    color: #263746;
+}
+
+.frameLogo{width: 138px;
+    height: 53px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
     flex-grow: 0;}
+
+.frameTitleLogo{//position: absolute;
+    left: 4.44%;
+    right: 85.97%;
+    top: 56.68%;
+    bottom: 18.82%;
+    
+    }
+
+.frameFishLogo{//position: absolute;
+    width: 45.75px;
+    height: 30.29px;
+    left: 156.25px;
+    top: 16px;}
 
 
 

@@ -128,6 +128,21 @@ color: #FFFFFF;
     flex-grow: 0;
 }
 
+.frameInputs{display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 434px;
+    height: 370px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;}
+
 .frameInput{display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -143,6 +158,23 @@ color: #FFFFFF;
     order: 0;
     flex-grow: 0;
 }
+
+.frameInputTextArea{display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    
+    width: 434px;
+    height: 186px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 
 .titleInput{font-family: 'Poppins';
     font-style: normal;

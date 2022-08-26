@@ -17,21 +17,25 @@
                 Fale conosco
             </div>
             <div class="frameFormSendeMessage fluid">
-                <div class="frameInput">
-                    <div class="titleInput">Nome do evento</div>
-                    <input type="text" pInputText [style]="{'width':'434px','height': '48px'}"  />
+                <div class="frameInputs">
+                    <div class="frameInput">
+                        <div class="titleInput">Nome do evento</div>
+                        <input type="text" pInputText [style]="{'width':'434px','height': '48px'}"  />
+                    </div>
+                    <div class="frameInput">
+                        <div class="titleInput">E-mail</div>
+                        <input type="text" pInputText [style]="{'width':'434px','height': '48px'}"  />
+                    </div>
+                    <div class="frameInputTextArea">
+                        <div class="titleInput">Mensagem</div>
+                        <textarea [style]="{'width':'434px','height': '186px'}">
+                        </textarea>
+                    </div>
                 </div>
-                <div class="frameInput">
-                    <div class="titleInput">E-mail</div>
-                    <input type="text" pInputText [style]="{'width':'434px','height': '48px'}"  />
-                </div>
-                <div class="frameInput">
-                    <div class="titleInput">Mensagem</div>
-                    <textarea [style]="{'width':'434px','height': '158px'}">
-                    </textarea>
-                </div>
-                <div class="sendeMesssage">Enviar Messagem</div>
-            </div>        
+                <div class="sendeMesssage">Enviar Messagem</div>   
+            </div>     
+            
+
         </div>        
     </div>
     <app-footer></app-footer>

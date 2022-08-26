@@ -9,8 +9,17 @@
 
         <div classe="frameInputs p-fluid">            
             <div class="frameInput p-field">
-                <div class="titleInput">Dias do evento</div>
-                <p-calendar [style]="{'width':'354px','height': '48px'}"  selectionMode="multiple" dateFormat="dd/mm"  [readonlyInput]="true" inputId="multiple"></p-calendar>
+                <div class="titleInput" (click)="ShowDialogEventDate()">Dias do evento</div>
+
+                <p-dialog 
+                    position="center"
+                    [breakpoints]="{ '715px': '89%' }" 
+                    [style]="{ width: '635px' }"
+                    [(visible)]="DialogEventDateShowing" 
+                    [modal]="true" 
+                    styleClass="p-fluid">
+                    <app-eventdate-submit></app-eventdate-submit>
+                </p-dialog>                
             </div>
             <div class="frameInput p-field">
                 <div class="titleInput">Período</div> 
