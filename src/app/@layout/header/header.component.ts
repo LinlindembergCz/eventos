@@ -78,23 +78,50 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  openHome() {
-    this.router.navigate(['/#sebraelab']);
+  showHome() {
+    this.router.navigate(['']);
   }
 
-  gotoQuemSomos()
+  showQuemSomos()
   {
-    this.router.navigate(['/home']);
+    this.router.navigate(['quemsomos']);
   }
 
-  openProjects() {
-    this.router.navigate(['/projects']);
+  showEventos()
+  {
+    this.router.navigate(['eventos']);
   }
 
-  openProfileUser() {
-    this.router.navigate([`/user/show/${this.user.userId}`]);
+  showContato()
+  {
+    this.router.navigate(['contato']);
   }
 
+  showMeuEvento()
+  {
+    this.router.navigate(['meuevento']);
+  }
+
+  showNoticias()
+  {
+    this.router.navigate(['noticias']);
+  }
+
+  showEBook()
+  {
+    this.router.navigate(['ebook']);
+  }
+
+  showEditais()
+  {
+    this.router.navigate(['editais']);
+  }
+
+  showOutros()
+  {
+    this.router.navigate(['outros']);
+  }
+  
   Login() {
     this.router.navigate(['/user/login']);
 

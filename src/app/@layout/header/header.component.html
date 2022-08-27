@@ -17,20 +17,22 @@
           </a>
 
           <ul class="menu-list">
-              <li class="menuItem">Home</li>
-              <li class="menuItem">Quem Somos</li>
+              <li class="menuItem"(click)="showHome()">Home</li>
+              <li class="menuItem" (click)="showQuemSomos()">Quem Somos</li>
               <li class="menuItem dropdown">Conteúdo
                 <img src="/assets/imgs/chevron-left.png"/>
                 <div class="dropdown-content">
-                  <a href="#">Notícias</a>
-                  <a href="#">EBook</a>
-                  <a href="#">Editais</a>
-                  <a href="#">Outros</a>
+                  <a (click)="showNoticias()">Notícias</a>
+                  <a (click)="showEBook()">EBook</a>
+                  <a (click)="showEditais()">Editais</a>
+                  <a (click)="showOutros()">Outros</a>
                 </div>
               </li>
-              <li class="menuItem">Eventos</li>
-              <li class="menuItem">Contato</li>
-              <li class="menuItem"><div class="frameRealize">Realize seu evento</div></li>
+              <li class="menuItem" (click)="showEventos()">Eventos</li>
+              <li class="menuItem" (click)="showContato()">Contato</li>
+              <li class="menuItem" (click)="showMeuEvento()">
+                <div class="frameRealize">Realize seu evento</div>
+              </li>
           </ul>
            
       </div>

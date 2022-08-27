@@ -9,16 +9,23 @@
 
         <div classe="frameInputs p-fluid">            
             <div class="frameInput p-field">
-                <div class="titleInput" (click)="ShowDialogEventDate()">Dias do evento</div>
-
+                <div class="titleInput" >Dias do evento</div>
+                <div class="inputCalendar" (click)="showDialogEventDate()">
+                   <img src="./assets/imgs/icon_calendar.png"/> {{EventDays}}
+                </div>
                 <p-dialog 
-                    position="center"
+                    position="left"
+                    header="Calendário" 
+                    blockScroll="false"
                     [breakpoints]="{ '715px': '89%' }" 
-                    [style]="{ width: '635px' }"
+                    [style]="{ width: '410px' }"
                     [(visible)]="DialogEventDateShowing" 
-                    [modal]="true" 
+                    [modal]="false" 
                     styleClass="p-fluid">
-                    <app-eventdate-submit></app-eventdate-submit>
+                       <app-eventdate-submit
+                       (clickHide)="hideDialogEventDate()"
+                       (clickReserve)="reserve($event)"
+                       ></app-eventdate-submit>
                 </p-dialog>                
             </div>
             <div class="frameInput p-field">

@@ -13,8 +13,8 @@ import { ContactSubmitComponent } from './components/contact-submit/contact-subm
 import {EcosystemShowComponent } from './components/ecosystem-show/ecosystem-show.component';
 import {EventDateComponent } from './components/reserv-submit/components/eventDate-show.component'; 
 
-import { FooterModule } from 'src/app/@layout/footer/footer.module';
-import { HeaderModule } from 'src/app/@layout/header/header.module';
+import { FooterModule } from '../../@layout/footer/footer.module';
+import { HeaderModule } from '../../@layout/header/header.module';
 
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { CardModule } from 'primeng/card';
@@ -29,7 +29,6 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { InputMaskModule } from 'primeng/inputmask';
 import { DialogModule } from 'primeng/dialog';
 import {RadioButtonModule} from 'primeng/radiobutton';
-
 @NgModule({
   declarations: [IndexComponent, 
      BannersShowComponent,SebraelabShowComponent, ContentShowComponent,
@@ -43,6 +42,7 @@ import {RadioButtonModule} from 'primeng/radiobutton';
     NgPrimeExportsModule,
     HomeRountingModule,    
     NgxCaptchaModule,
+
     CardModule,
     RatingModule,
     FieldsetModule,
@@ -56,7 +56,9 @@ import {RadioButtonModule} from 'primeng/radiobutton';
     FooterModule,
     HeaderModule,
     DialogModule,
-    RadioButtonModule
+    RadioButtonModule,
+
+
     
   ],
   providers: []

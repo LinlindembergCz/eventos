@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventBooking } from './model/EventBooking-model';
 
 @Component({
   selector: 'app-reserv-submit',
@@ -8,14 +9,28 @@ import { Component, OnInit } from '@angular/core';
 export class ReservSubmitComponent implements OnInit {
 
   DialogEventDateShowing: Boolean = false;
+  EventDays: string ='';
   
   ngOnInit(): void {   
   }
 
-  ShowDialogEventDate()
+  showDialogEventDate()
   {
     this.DialogEventDateShowing = true;
   }
+
+  hideDialogEventDate()
+  {
+    this.DialogEventDateShowing = false;
+  }
+
+  public reserve(event: EventBooking): void
+  {
+     this.EventDays =''
+     event.Days.forEach( e=>{this.EventDays = this.EventDays + e.toLocaleDateString()+' '; })
+  }
+
+
 
 
 }

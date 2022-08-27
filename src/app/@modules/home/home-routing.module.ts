@@ -10,8 +10,9 @@ const routes: Routes = [
     },
     {
       path: 'index',
-      component: IndexComponent
-    }
+      component: IndexComponent,
+    },
+
  ];
 
 @NgModule({

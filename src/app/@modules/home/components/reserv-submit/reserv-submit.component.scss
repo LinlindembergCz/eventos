@@ -213,3 +213,28 @@
 
 
 }
+
+.inputCalendar{box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 8px;
+  
+  width: 354px;
+  height: 48px;
+  
+  /* Tailwind/white */
+  background: #FFFFFF;
+  
+  /* Tailwind/slate/400 */
+  border: 1px solid #94A3B8;
+  border-radius: 8px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;}

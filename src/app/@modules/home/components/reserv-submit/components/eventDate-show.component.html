@@ -1,24 +1,33 @@
-<div class="frameMain">    
-    <div class="frameOptions">
+   <div class="frameOptions">
         <div class="frameOptionsHead">
-            <label>Calendário</label>
             Selecione um ou mais dias
         </div>        
-        <p></p> 
         <div class="frameOptionsBody ">   
             <p-radioButton name="opt" value="val1" [(ngModel)]="optionDate" inputId="opt1" label="Dia indisponível/ocupado"></p-radioButton>
             <p-radioButton name="opt" value="val2" [(ngModel)]="optionDate" inputId="opt2" label="Dia com pelo menos um período já reservado"></p-radioButton>
             <p-radioButton name="opt" value="val3" [(ngModel)]="optionDate" inputId="opt3" label="Dia selecionado"></p-radioButton>
-            <p></p> <p></p>
-            <button pButton type="button" label="Aplicar" class="buttonApply p-button-outlined"></button>
-     
-        </div>      
+       </div>    
     </div>
 
-    <p-divider layout="vertical" class="frameDivisor"></p-divider>
-
-    <div class="frameCalendar">
-        <p-calendar [inline]="true" selectionMode="multiple" dateFormat="dd/mm"  style="border: 0px;"
+    <!--<div class="frameCalendar"> 
+        <p-calendar [inline]="true" [style]="{'width':'10%'}" [inputStyle]="{'width':'10%'}" class="treetableDate" selectionMode="multiple" dateFormat="dd/mm"  style="border: 0px;"
         [readonlyInput]="true" inputId="multiple"></p-calendar>
-    </div>
-</div>
+    </div>-->
+    <div class="container">
+        <span class="ui-float-label">
+          <p-calendar 
+           inputId="text" 
+           id="text" 
+           [showIcon]="true"
+           [inline]="true" 
+           selectionMode="multiple"
+           dayNamesShort="['Dom', 'Seg', 'Ter', 'Qa', 'Qi', 'Sex', 'Sab']"
+           [(ngModel)]="eventBooking.Days" 
+           dateFormat="dd/mm/yy" 
+           >
+          
+          </p-calendar>
+        </span>
+      </div>
+      <p></p>
+      <button pButton type="button"  label="Aplicar" class="buttonApply p-button-outlined" (click)="Apply()"></button>
