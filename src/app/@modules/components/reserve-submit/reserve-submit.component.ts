@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { EventBooking } from './model/EventBooking-model';
 
 @Component({
-  selector: 'app-reserv-submit',
-  templateUrl: './reserv-submit.component.html',
-  styleUrls: ['./reserv-submit.component.scss']
+  selector: 'app-reserve-submit',
+  templateUrl: './reserve-submit.component.html',
+  styleUrls: ['./reserve-submit.component.scss']
 })
-export class ReservSubmitComponent implements OnInit {
+export class ReserveSubmitComponent implements OnInit {
 
   DialogEventDateShowing: Boolean = false;
   EventDays: string ='';

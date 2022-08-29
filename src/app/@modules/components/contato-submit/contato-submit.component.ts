@@ -5,11 +5,11 @@ import { environment } from 'src/environments/environment';
 import { LoaderService } from 'src/app/@bootstrap/services/loader.service';
 
 @Component({
-  selector: 'app-contact-submit',
-  templateUrl: './contact-submit.component.html',
-  styleUrls: ['./contact-submit.component.scss']
+  selector: 'app-contato-submit',
+  templateUrl: './contato-submit.component.html',
+  styleUrls: ['./contato-submit.component.scss']
 })
-export class ContactSubmitComponent implements OnInit {
+export class ContatoSubmitComponent implements OnInit {
 
   public aFormGroup: FormGroup;
   public captchaOK: boolean;

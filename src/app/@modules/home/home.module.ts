@@ -4,14 +4,14 @@ import { IndexComponent } from './pages/index/index.component';
 import { HomeRountingModule } from './home-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgPrimeExportsModule } from 'src/app/@bootstrap/scripts/ngprime.exports';
-import {BannersShowComponent } from './components/banners-show/banners-show.component';
-import {SebraelabShowComponent } from './components/sebraelab-show/sebraelab-show.component';
-import {ContentShowComponent } from './components/content-show/content-show.component';
-import {EventoslabShowComponent } from './components/eventoslab-show/eventoslab-show.component';
-import {ReservSubmitComponent } from './components/reserv-submit/reserv-submit.component';
-import { ContactSubmitComponent } from './components/contact-submit/contact-submit.component';
-import {EcosystemShowComponent } from './components/ecosystem-show/ecosystem-show.component';
-import {EventDateComponent } from './components/reserv-submit/components/eventDate-show.component'; 
+import { BannersHomeShowComponent } from './banners-home-show/banners-home-show.component';
+import { SebraelabShowComponent } from '../components/sebraelab-show/sebraelab-show.component';
+import { ConteudoShowComponent } from '../components/conteudo-show/conteudo-show.component';
+import { EventoslabShowComponent } from '../components/eventoslab-show/eventoslab-show.component';
+import { ReserveSubmitComponent } from '../components/reserve-submit/reserve-submit.component';
+import { ContatoSubmitComponent } from '../components/contato-submit/contato-submit.component';
+import { EcosistemaShowComponent } from '../components/ecosistema-show/ecosistema-show.component';
+import { EventDateComponent } from '../components/reserve-submit/components/eventDate-show.component'; 
 
 import { FooterModule } from '../../@layout/footer/footer.module';
 import { HeaderModule } from '../../@layout/header/header.module';
@@ -29,13 +29,17 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { InputMaskModule } from 'primeng/inputmask';
 import { DialogModule } from 'primeng/dialog';
 import {RadioButtonModule} from 'primeng/radiobutton';
+import { ContatoSubmitModule } from '../components/contato-submit/contato-submit.module';
+import { EcoSistemaShowModule } from '../components/ecosistema-show/ecosistema-show.module';
 @NgModule({
   declarations: [IndexComponent, 
-     BannersShowComponent,SebraelabShowComponent, ContentShowComponent,
-     EventoslabShowComponent, ReservSubmitComponent,ContactSubmitComponent,
-     EcosystemShowComponent  ,EventDateComponent 
+     BannersHomeShowComponent,SebraelabShowComponent, ConteudoShowComponent,
+     EventoslabShowComponent, ReserveSubmitComponent,
+     EventDateComponent 
     ],
   imports: [
+    EcoSistemaShowModule,
+    ContatoSubmitModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,

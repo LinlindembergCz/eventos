@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { RequestPromiseService } from 'src/app/@shared/services/request-promise.service';
+import { RequestPromiseService } from '../../../@shared/services/request-promise.service';
 
 class Banner{
   name: string ;
@@ -9,11 +9,11 @@ class Banner{
 }
 
 @Component({
-  selector: 'app-banners-show',
-  templateUrl: './banners-show.component.html',
-  styleUrls: ['./banners-show.component.scss']
+  selector: 'app-banners-eventos-show',
+  templateUrl: './banners-eventos-show.component.html',
+  styleUrls: ['./banners-eventos-show.component.scss']
 })
-export class BannersShowComponent implements OnInit {
+export class BannersEventosShowComponent implements OnInit {
 
   imgs: Banner[] = [];
   itens: any[]=[];
@@ -29,7 +29,7 @@ export class BannersShowComponent implements OnInit {
 
   getInfo() 
   { 
-      this.http.get<any>("assets/data","projectAbout.json").
+      this.http.get<any>("assets/data","banners.json").
       then(x => {      
             x.images.forEach(i => {
                           this.itens.push( {name: x.name, summary:x.summary, image:i });

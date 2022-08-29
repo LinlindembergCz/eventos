@@ -1,0 +1,241 @@
+
+.frame {
+/* Group 2553 */
+position: absolute;
+width: 1447px;
+height: 1889px;
+left: -4px;
+top: 585px;
+}
+
+.frameButtonsTop{
+/* Frame 5821 */
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 26px;
+
+position: absolute;
+width: 1161px;
+height: 60px;
+left: 139px;
+top: 641px;
+}
+
+.frameEntenda{
+  border: 1px solid;
+  position: absolute;
+  width: 1152px;
+  height: 1521px;
+  left: 144px;
+  top: 243px;
+}
+
+.frameTitleEntenda{
+  border: 1px solid;
+  position: absolute;
+  width: 1152px;
+  height: 1521px;
+  left: 144px;
+  top: 743px;
+}
+
+
+.frameOqueEh{
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  position: absolute;
+  width: 522px;
+  height: 416px;
+  left: 31px;
+  top: 180px;
+}
+
+.frameOqueNaoEh{
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  
+  position: absolute;
+  width: 447px;
+  height: 386px;
+  left: 675px;
+  top: 180px;
+}
+
+.frameImageEstrutura{
+  border: 1px solid;
+  position: absolute;
+  width: 1152px;
+  height: 372px;
+  left: 0px;
+  top: 708px; 
+}
+
+.frameEstrutura{
+  border: 1px solid;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 1088px;
+height: 142px;
+left: 32px;
+top: 894px;
+}
+
+.frameTitleEstrutura{
+  border: 1px solid;
+  width: 228px;
+  height: 50px;  
+  /* Heading / H2 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;  
+  /* identical to box height, or 125% */
+  display: flex;
+  align-items: center;  
+  /* Cores da Marca/Tipografia/Preto */
+  color: #263746; 
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.frameEstruturaBotton{
+  border: 1px solid;
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1088px;
+height: 76px;
+
+//background: rgba(248, 250, 252, 0.8);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.frameEstruraFlexivelModular{
+  border: 1px solid;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+
+width: 271px;
+height: 76px;
+
+/* Cores da Marca/Variações da Marca/Rosa/2 */
+background: #E03C8B;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.frameEstruturaConteudoTexto{
+  border: 1px solid;
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 0px;
+gap: 8px;
+width: 793px;
+height: 76px;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.frameEstruturaTexto{
+  border: 1px solid;
+  //Os espaços do sebraelab se adaptam a diferentes necessidades e propósitos de uso, propícios ao trabalho coletivo e à criatividade
+  width: 793px;
+  height: 60px;
+  /* Heading / H5 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #263746;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.frameEspacoProdutoServico{
+  border: 1px solid;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 80px 111px;
+gap: 120px;
+
+position: absolute;
+width: 1441px;
+height: 367px;
+left: -1px;
+top: 2424px;
+
+background: rgba(139, 206, 220, 0.8);
+}
+
+.frameEspaco{display: flex;
+  border: 1px solid;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;  
+  width: 482px;
+  height: 207px;    
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.frameProdutoServico{display: flex;
+  border: 1px solid;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;    
+  width: 482px;
+  height: 207px;   
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+

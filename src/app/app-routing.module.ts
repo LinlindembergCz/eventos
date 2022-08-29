@@ -3,12 +3,13 @@ import { Routes, RouterModule, ExtraOptions, PreloadAllModules } from '@angular/
 import { AuthGuard } from './@bootstrap/security/auth.guard';
 import { BlankComponent } from './@layout/blank/blank.component';
 import { LayoutComponent } from './@layout/layout.component';
-import { ContatoComponent } from './@modules/contato/contatocomponent';
+import { ContatoComponent } from './@modules/contato/contato.component';
 import { EBookComponent } from './@modules/conteudo/ebook/ebook.component';
 import { EditaisComponent } from './@modules/conteudo/editais/editais.component';
 import { NoticiasComponent } from './@modules/conteudo/noticias/noticias.component';
 import { OutrosComponent } from './@modules/conteudo/outros/outros.component';
 import { EventosComponent } from './@modules/eventos/eventos.component';
+import { MeuEventoComponent } from './@modules/meuevento/meuevento.component';
 import { QuemSomosComponent } from './@modules/quemsomos/quemsomos.component';
 
 const routes: Routes = [
@@ -58,6 +59,11 @@ const routes: Routes = [
     component: QuemSomosComponent,
     loadChildren: () => import('./@modules/quemsomos/quemsomos.module').then(m => m.QuemSomosModule)
   },
+  {
+    path: 'meuevento',
+    component: MeuEventoComponent,
+    loadChildren: () => import('./@modules/meuevento/meuevento.module').then(m => m.MeuEventoModule)
+  },  
   {
     path: 'user',
     component: LayoutComponent,

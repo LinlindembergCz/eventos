@@ -1,6 +1,77 @@
+.Rectangle1059{
+    //border: 1px solid;
+    position: absolute;
+    width: 1312px;
+    height: 800px;
+    left: 64px;
+    top: 641px;
+
+    /* Tailwind/slate/100 */
+    background: #F1F5F9;
+    border-radius: 16px;
+}
 
 
 
+.frameCalendar{
+    //border: 1px solid;
+    /* Frame 5736 */
+    /* Auto layout */
+    display: flex;
+    //flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 459px;
+    height: 483px;
+    left: 175px;
+    top: 25px;
+}
+
+.frameCrieSeuEvento{
+    //border: 1px solid;
+    /* CRIE SEU EVENTO */
+    position: absolute;
+    width: 482px;
+    height: 700px;
+    left: 816px;
+    top: 670px;
+    /* Heading/H3 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 42px;
+    /* identical to box height, or 131% */
+    /* Cores da Marca/Tipografia/Preto */
+    color: #263746;
+}
+
+.frameTimeline{
+    align-items: left;
+    //border: 1px solid;
+    position: absolute;
+    width: 482px;
+    height: 600px;
+    left: 0px;
+    top: 100px;
+}
 
 
+.frameFuncionamento{ 
+    /* Frame 5903 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 64px;
+  
+  position: absolute;
+  width: 1440px;
+  height: 1405px;
+  left: 0px;
+  top: 1616px;}
 

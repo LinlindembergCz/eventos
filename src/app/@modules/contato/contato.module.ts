@@ -18,7 +18,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { InputMaskModule } from 'primeng/inputmask';
 import { DialogModule } from 'primeng/dialog';
 import { RadioButtonModule} from 'primeng/radiobutton';
-import { ContatoComponent } from './contatocomponent';
+import { ContatoComponent } from './contato.component';
 
 @NgModule({
   declarations: [ContatoComponent

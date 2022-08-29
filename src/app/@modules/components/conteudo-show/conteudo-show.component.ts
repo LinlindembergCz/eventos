@@ -10,11 +10,11 @@ class Image{
 }
 
 @Component({
-  selector: 'app-content-show',
-  templateUrl: './content-show.component.html',
-  styleUrls: ['./content-show.component.scss']
+  selector: 'app-conteudo-show',
+  templateUrl: './conteudo-show.component.html',
+  styleUrls: ['./conteudo-show.component.scss']
 })
-export class ContentShowComponent implements OnInit {
+export class ConteudoShowComponent implements OnInit {
 
   imgs: Image[] = [];
   itens: any[]=[];

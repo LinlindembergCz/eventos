@@ -19,10 +19,23 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { InputMaskModule } from 'primeng/inputmask';
 import { DialogModule } from 'primeng/dialog';
 import { RadioButtonModule} from 'primeng/radiobutton';
+import {TimelineModule} from 'primeng/timeline';
+import {DropdownModule} from 'primeng/dropdown';
+import {GMapModule} from 'primeng/gmap';
+
 import { MeuEventoComponent } from './meuevento.component';
 
+import { BannersMeuEventoShowComponent } from './banners-meuevento-show/banners-meuevento-show.component';
+import { EventoSubmit } from './evento-submit/evento-submit.component';
+import { FuncionamentoShow } from './funcionamento-show/funcionamento-show.component';
+
+
+import {AccordionModule} from 'primeng/accordion';
+
+
 @NgModule({
-  declarations: [MeuEventoComponent
+  declarations: [MeuEventoComponent, BannersMeuEventoShowComponent, EventoSubmit,
+    FuncionamentoShow
     ],
   imports: [
     CommonModule,
@@ -43,6 +56,10 @@ import { MeuEventoComponent } from './meuevento.component';
     HeaderModule,
     DialogModule,
     RadioButtonModule,
+    TimelineModule,
+    AccordionModule,
+    DropdownModule,
+    GMapModule
 
  
     

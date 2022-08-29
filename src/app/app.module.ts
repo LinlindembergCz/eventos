@@ -4,13 +4,11 @@ import { UserIdleModule } from 'angular-user-idle';
 import { TranslateModule } from '@ngx-translate/core';
 import { UserIdleSettings, TranslateSettings } from './@bootstrap/scripts/global.const';
 import { AuthGuard } from './@bootstrap/security/auth.guard';
-import { HttpCancelService } from './@bootstrap/services/http-cancel.service';
-import { HttpCancelInterceptor } from './@bootstrap/providers/http-cancel.Interceptor';
+
 import { BeforeLoaderProvider } from './@bootstrap/providers/before-loader.provider';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BootstrapModule } from './@bootstrap/bootstrap.module';
 import { AuthInterceptor } from './@bootstrap/security/auth.interceptor';
-import { HeaderComponent } from './@layout/header/header.component';
 import { MenuComponent } from './@layout/menu/menu.component';
 import { LayoutComponent } from './@layout/layout.component';
 import { BreadcrumpComponent } from './@layout/breadcrump/breadcrump.component';
@@ -21,7 +19,7 @@ import { registerLocaleData } from '@angular/common';
 import { BlankComponent } from './@layout/blank/blank.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { FooterComponent } from './@layout/footer/footer.component';
+
 
 registerLocaleData(ptBR);
 
