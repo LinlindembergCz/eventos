@@ -1,0 +1,90 @@
+.Rectangle1059{
+  //border: 1px solid;
+  position: absolute;
+  width: 1312px;
+  height: 800px;
+  left: 64px;
+  top: 641px;
+
+  /* Tailwind/slate/100 */
+  background: #F1F5F9;
+  border-radius: 16px;
+}
+
+.frameCalendar{
+  //border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px;
+  gap: 28px;
+  
+  position: absolute;
+  width: 459px;
+  height: 779px;
+  left: 176px;
+  top: 10px;
+  
+  background: #FFFFFF;
+  box-shadow: 3.06536px 24.5229px 29.1209px rgba(0, 0, 0, 0.09);
+  border-radius: 12px;
+  align-items: center;
+}
+
+.framePeriodo{// Frame 2512
+  //border: 1px solid;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+  
+  width: 305px;
+  height: 80px;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+
+.frameOptionsPeriodo{/* Frame 5863 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;    
+  width: 325px;
+  height: 20px;    
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.frameInputPeriodo{/* Frame 5864 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  
+  width: 305px;
+  height: 60px;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;}
+
+
+ 
+  

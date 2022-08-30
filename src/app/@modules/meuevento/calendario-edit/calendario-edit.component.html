@@ -1,0 +1,57 @@
+<div class="Rectangle1059">        
+  <div class="frameCalendar">
+      <p-calendar 
+      inputId="text" 
+      id="text" 
+      [showIcon]="true"
+      [inline]="true" 
+      selectionMode="multiple"
+      dayNamesShort="['Dom', 'Seg', 'Ter', 'Qa', 'Qi', 'Sex', 'Sab']"
+      dateFormat="dd/mm/yy"
+      [(ngModel)]="SelectedDates"                 
+      (click)="selectDate($event)"
+      inputStyle="color:#FFFFFF"
+      >          
+      </p-calendar><br>     
+ 
+    <p-virtualScroller [value]="periodos" scrollHeight="300px" style="width:'420px'" [itemSize]="100" >
+        <ng-template pTemplate="header">Período</ng-template>
+        <ng-template pTemplate="item" let-periodo>
+            <div class="frameDataPeriodo"><img src="../../assets/imgs/akar-icons_clock.png"> {{periodo.data}}</div>
+            <div class="frameOptionsPeriodo">
+                <p-checkbox name="{{periodo.name}}" value="manha" label="Manhã" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
+                <p-checkbox name="{{periodo.name}}" value="tarde" label="Tarde" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
+                <p-checkbox name="{{periodo.name}}" value="noite" label="Noite" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
+                <p-radioButton name="{{periodo.name}}" value="diainteiro" label="Dia Inteiro"[(ngModel)]="periodos[periodo.index].option"></p-radioButton>
+            </div>
+            <br>
+            <div class="frameInputPeriodo">
+                Início<p-inputMask mask="99:99" name="horaInicio" width="5%" [(ngModel)]="periodos[periodo.index].horaInicio"></p-inputMask>
+                Fim <p-inputMask mask="99:99" name="horaFim" width="5%" [(ngModel)]="periodos[periodo.index].horaFim"></p-inputMask>
+            </div>
+        </ng-template>
+    </p-virtualScroller>
+
+
+
+    <!--  <p-virtualScroller [value]="periodos" scrollHeight="100px" [itemSize]="50">  
+        <ng-template pTemplate="item" let-periodo> 
+            <div *ngFor="let periodo of periodos">
+                <div class="frameDataPeriodo"><img src="../../assets/imgs/akar-icons_clock.png"> {{periodo.data}}</div>
+                <div class="frameOptionsPeriodo">
+                    <p-checkbox name="{{periodo.name}}" value="manha" label="Manhã" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
+                    <p-checkbox name="{{periodo.name}}" value="tarde" label="Tarde" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
+                    <p-checkbox name="{{periodo.name}}" value="noite" label="Noite" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
+                    <p-radioButton name="{{periodo.name}}" value="diainteiro" label="Dia Inteiro"[(ngModel)]="periodos[periodo.index].option"></p-radioButton>
+                    {{periodos[periodo.index].option}}
+                </div>
+                <div class="frameInputPeriodo">
+                    Início<input type="text" name="horaInicio" style="width: 20%" [(ngModel)]="periodos[periodo.index].horaInicio"> 
+                    Fim <input type="text" name="horaFim" style="width: 20%" [(ngModel)]="periodos[periodo.index].horaFim">
+                </div>
+            </div>
+        </ng-template> 
+      </p-virtualScroller>-->
+
+  </div>
+</div> 

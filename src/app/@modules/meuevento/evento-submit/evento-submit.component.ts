@@ -15,7 +15,7 @@ interface TipoEvento {
 export class EventoSubmit implements AfterViewInit, OnInit  {
 
     loadAllTabs:boolean = false;
-    activeIndex:number=0;
+    activeIndex:number=-1;
 
     events: any[];
     tiposEnvento:TipoEvento[];

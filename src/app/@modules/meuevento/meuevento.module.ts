@@ -21,21 +21,24 @@ import { DialogModule } from 'primeng/dialog';
 import { RadioButtonModule} from 'primeng/radiobutton';
 import {TimelineModule} from 'primeng/timeline';
 import {DropdownModule} from 'primeng/dropdown';
-import {GMapModule} from 'primeng/gmap';
+import {VirtualScrollerModule} from 'primeng/virtualscroller';
 
 import { MeuEventoComponent } from './meuevento.component';
 
 import { BannersMeuEventoShowComponent } from './banners-meuevento-show/banners-meuevento-show.component';
 import { EventoSubmit } from './evento-submit/evento-submit.component';
 import { FuncionamentoShow } from './funcionamento-show/funcionamento-show.component';
+import { CalendarioEditComponent } from './calendario-edit/calendario-edit.component';
+
 
 
 import {AccordionModule} from 'primeng/accordion';
+import { CheckboxModule } from 'primeng/checkbox';
 
 
 @NgModule({
   declarations: [MeuEventoComponent, BannersMeuEventoShowComponent, EventoSubmit,
-    FuncionamentoShow
+    FuncionamentoShow, CalendarioEditComponent
     ],
   imports: [
     CommonModule,
@@ -59,7 +62,11 @@ import {AccordionModule} from 'primeng/accordion';
     TimelineModule,
     AccordionModule,
     DropdownModule,
-    GMapModule
+    CheckboxModule,
+    VirtualScrollerModule
+   
+
+
 
  
     

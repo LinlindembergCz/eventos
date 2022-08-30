@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { EventBooking } from '../components/reserve-submit/model/EventBooking-model';
+class MeuEvento {
+  Days?: Date[];
+  Hours?: string;
+  Name?: string;
+  subscribedCapacity?: number;
+}
 
 @Component({
   selector: 'app-meuevento',
@@ -7,11 +14,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeuEventoComponent implements OnInit {
 
+
+
+  optionsCheck: string[]=[];
   
   constructor() { }
 
   ngOnInit(): void {
 
   }
+
 
 }
