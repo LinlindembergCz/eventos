@@ -30,11 +30,8 @@ import { EventoSubmit } from './evento-submit/evento-submit.component';
 import { FuncionamentoShow } from './funcionamento-show/funcionamento-show.component';
 import { CalendarioEditComponent } from './calendario-edit/calendario-edit.component';
 
-
-
 import {AccordionModule} from 'primeng/accordion';
 import { CheckboxModule } from 'primeng/checkbox';
-
 
 @NgModule({
   declarations: [MeuEventoComponent, BannersMeuEventoShowComponent, EventoSubmit,
@@ -63,12 +60,7 @@ import { CheckboxModule } from 'primeng/checkbox';
     AccordionModule,
     DropdownModule,
     CheckboxModule,
-    VirtualScrollerModule
-   
-
-
-
- 
+    VirtualScrollerModule,
     
   ],
   providers: []

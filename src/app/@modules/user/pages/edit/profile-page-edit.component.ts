@@ -124,7 +124,8 @@ export class ProfilePageEditComponent implements OnInit {
                   this.router.navigate([`/user/show/${id}`]);
 
                 }
-          ).catch(x => { console.log(x); } );
+          ).catch(x => { //console.log(x); 
+          } );
       }
   }
 

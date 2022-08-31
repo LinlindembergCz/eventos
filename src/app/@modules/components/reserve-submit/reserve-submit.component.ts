@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { EventBooking } from './model/EventBooking-model';
 
 @Component({
@@ -9,7 +10,13 @@ import { EventBooking } from './model/EventBooking-model';
 export class ReserveSubmitComponent implements OnInit {
 
   DialogEventDateShowing: Boolean = false;
-  EventDays: string ='';
+  EventDays: Array<string> ;
+
+  constructor(
+    private router: Router
+  ) {
+
+  }
   
   ngOnInit(): void {   
   }
@@ -26,10 +33,22 @@ export class ReserveSubmitComponent implements OnInit {
 
   public reserve(event: EventBooking): void
   {
-     this.EventDays =''
-     event.Days.forEach( e=>{this.EventDays = this.EventDays + e.toLocaleDateString()+' '; })
+      this.EventDays = [];
+      event.Days.forEach( e=>{
+       this.EventDays.push(e.getFullYear()  + '/' +( e.getMonth()+1 )+ '/' +e.getDate())
+      })
   }
 
+  showMeuEvento()
+  {
+    this.router.navigate([`meuevento`],
+    { queryParams:{  
+                    datas: [ JSON.stringify(this.EventDays)],
+                    nomeevento:'MEU EVENTO',
+                    numeroparticipantes:'30'
+                  } 
+     } ); 
+  }
 
 
 

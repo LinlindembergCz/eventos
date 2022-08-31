@@ -65,6 +65,10 @@ const routes: Routes = [
     loadChildren: () => import('./@modules/meuevento/meuevento.module').then(m => m.MeuEventoModule)
   },  
   {
+    path: 'meuevento?:datas',
+    loadChildren: () => import('./@modules/meuevento/meuevento.module').then(m => m.MeuEventoModule)
+  },
+  {
     path: 'user',
     component: LayoutComponent,
     loadChildren: () => import('./@modules/user/user.module').then(m => m.ProfileModule)

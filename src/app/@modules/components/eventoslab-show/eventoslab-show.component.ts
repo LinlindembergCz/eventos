@@ -48,7 +48,7 @@ export class EventoslabShowComponent implements OnInit {
                            });
                       }); 
                       this.eventslab = this.itens;  
-                      console.log(this.eventslab)        
+                      //console.log(this.eventslab)        
           });
   }
 

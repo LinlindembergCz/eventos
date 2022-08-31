@@ -19,7 +19,7 @@ export class ApplicationStateService implements OnDestroy {
   }
 
   startHostListener(): void {
-    console.log("Start Host Listener Observer");
+    //console.log("Start Host Listener Observer");
     fromEvent(window, 'resize').subscribe(($event: any) => {
       this.onResize($event);
     });
@@ -70,6 +70,6 @@ export class ApplicationStateService implements OnDestroy {
     this.currentWindow.complete();
     this.smResolution.complete();
     this.keyup.complete();
-    console.log("Stop Host Listener Observer");
+    //console.log("Stop Host Listener Observer");
   }
 }

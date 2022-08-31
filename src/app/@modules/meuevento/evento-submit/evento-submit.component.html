@@ -2,16 +2,16 @@
 
 <p-accordion  expandIcon = "pi" collapseIcon = "pi" (onOpen)="onTabOpen($event)">
 
-  <p-accordionTab [selected]="activeIndex==0 || loadAllTabs">
+  <p-accordionTab [selected]="activeIndex==0 || loadAllTabs" [disabled]="activeIndex!=0">
     <ng-template pTemplate="header">
       <img src="./assets/imgs/tab1_active.png"/>
     </ng-template>
     <ng-template pTemplate="content">
-      <div>
-        <label  class="titleInput">Datas do evento</label>
+      <div class="titleInput">
+        <b>Datas do evento</b>
       </div>
-      <div>
-        <label class="titleInput">Selecione um ou mais dias</label> 
+      <div class="titleInput">
+        Selecione um ou mais dias
       </div>
       <div>
            <div><p-radioButton name="opt" value="val1" [(ngModel)]="optionDate" inputId="opt1" label="Dia indisponível/ocupado"></p-radioButton></div>
@@ -22,11 +22,11 @@
       <div>
         <div class="frameInput p-field">
           <div class="titleInput">Nome do evento</div>
-          <input type="text" pInputText [style]="{'width':'354px','height': '48px'}"  />
+          <input type="text" pInputText [style]="{'width':'354px','height': '48px'}" placeholder="Nome do evento" [(ngModel)]="nomeEvento"/>
         </div>
         <div class="frameInput p-field">
             <div class="titleInput">Número de participantes</div>
-            <p-inputNumber placeholder="Nº de Participantes" [min]="0" [max]="30" [style]="{'width':'354px','height': '48px'}" ></p-inputNumber>
+            <p-inputNumber placeholder="Nº de Participantes" [min]="0" [max]="30" [style]="{'width':'354px','height': '48px'}" [(ngModel)]="numeroParticipantes"></p-inputNumber>
         </div>
         <div >Capacidade máxima para 30 inscritos.</div>
         <div class="frameButton">        
@@ -36,7 +36,7 @@
       
     </ng-template>
   </p-accordionTab>
-  <p-accordionTab [selected]="activeIndex==1 || loadAllTabs">
+  <p-accordionTab [selected]="activeIndex==1 || loadAllTabs" [disabled]="activeIndex!=1">
     <ng-template pTemplate="header">
       <div *ngIf="activeIndex>=1">
           <img src="./assets/imgs/tab2_active.png"/>
@@ -84,7 +84,7 @@
       </div>
     </ng-template>
   </p-accordionTab>
-  <p-accordionTab [selected]="activeIndex==2 || loadAllTabs">
+  <p-accordionTab [selected]="activeIndex==2 || loadAllTabs" [disabled]="activeIndex!=2">
     <ng-template pTemplate="header">
        <div *ngIf="activeIndex==2">
           <img src="./assets/imgs/tab3_active.png"/>

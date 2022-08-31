@@ -31,8 +31,9 @@ background: black;
 }
 
 .frameTitle{
+  //border: 1px solid;
   /* Como funciona o agendamento de eventos? */
-  width: 726px;
+  width: 1889;
   height: 42px;  
   /* Heading/H3 */
   font-family: 'Poppins';
@@ -47,6 +48,7 @@ background: black;
   flex: none;
   order: 0;
   flex-grow: 0;
+  text-align: center;  
 }
 
 .frameTexto{
@@ -406,4 +408,9 @@ flex-grow: 1;
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+
+
+agm-map {
+  height: 300px;
 }

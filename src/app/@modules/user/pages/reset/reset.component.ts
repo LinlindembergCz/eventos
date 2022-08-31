@@ -98,7 +98,8 @@ export class ResetComponent implements OnInit {
                   this.toastr.addSingle("success","Registro!",'Senha alterada com sucesso.');
                   this.router.navigate([`/user/login`]);
                }
-          ).catch(x => { console.log(x); } );
+          ).catch(x => { //console.log(x); 
+          } );
     }
 
   }

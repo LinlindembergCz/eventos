@@ -126,7 +126,8 @@ export class ProfilePageNewComponent implements OnInit {
                this.router.navigate([`/user/login`]);
               }
 
-          ).catch(x => { console.log(x); } );
+          ).catch(x => { //console.log(x); 
+          } );
     }
 
   }
