@@ -86,8 +86,8 @@
         "medium": "Médio",
         "strong": "Forte",
         "passwordPrompt": "Coloque a senha",
-        "emptyMessage": "Nenhum resultado encontrado",
-        "emptyFilterMessage": "Nenhum resultado encontrado",
+        "emptyMessage": "Vazio",
+        "emptyFilterMessage": "Vazio",
         "selectedItemsLabel": "{0} items selecionados"
     }
 }

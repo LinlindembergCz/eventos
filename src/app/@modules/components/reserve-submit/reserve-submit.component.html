@@ -11,27 +11,29 @@
             <div class="frameInput p-field">
                 <div class="titleInput" >Dias do evento</div>
                 <div class="inputCalendar" (click)="showDialogEventDate()">
-                   <img src="./assets/imgs/icon_calendar.png"/> {{EventDays}}
+                   <img src="./assets/imgs/icon_calendar.png"/> {{EventDaysFormated}}
                 </div>
-                <p-dialog 
+            
+               <p-dialog 
                     position="left"
                     header="Calendário" 
                     blockScroll="false"
                     [breakpoints]="{ '715px': '89%' }" 
-                    [style]="{ width: '410px' }"
+                    [style]="{ width: '38%' }"
                     [(visible)]="DialogEventDateShowing" 
                     [modal]="false" 
                     styleClass="p-fluid">
-                       <app-eventdate-submit
+                       <app-eventdate-show 
                        (clickHide)="hideDialogEventDate()"
                        (clickReserve)="reserve($event)"
-                       ></app-eventdate-submit>
-                </p-dialog>                
+                       [ShowButtobAplly] = "true"
+                       ></app-eventdate-show>
+                       <!--<app-calendario-edit></app-calendario-edit>-->
+                </p-dialog>             
             </div>
             <div class="inputCalendar" >
-                <div class="titleInput" >Período</div>
-                <img src="./assets/imgs/akar-icons_clock.png"/> 
-             </div>
+               <img src="./assets/imgs/akar-icons_clock.png"/> {{EventPeriodoFormated}} 
+            </div>
             <div class="frameInput p-field">
                 <div class="titleInput">Nome do evento</div>
                 <input type="text" pInputText [style]="{'width':'354px','height': '48px'}"  />

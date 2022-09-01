@@ -50,7 +50,7 @@ export class EventoSubmit implements AfterViewInit, OnInit  {
        this.loadAllTabs = false
 
        this.route.queryParams.subscribe(
-        params =>{  if (params['datas'])
+        params =>{  if (params['nomeevento'])
                     {
                         this.nomeEvento =params['nomeevento'];
                     }
@@ -58,14 +58,9 @@ export class EventoSubmit implements AfterViewInit, OnInit  {
                     {
                         this.numeroParticipantes =params['numeroparticipantes'];
                     }
-
                   })
     }
-
-
-
-
-
+    
     onTabOpen(e:any)
     {
         this.activeIndex= e.index;

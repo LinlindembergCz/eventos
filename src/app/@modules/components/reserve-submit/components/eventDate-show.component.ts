@@ -1,15 +1,14 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CalendarioEditComponent } from '../../calendario-edit/calendario-edit.component';
 import { EventBooking } from '../model/EventBooking-model';
 
 @Component({
-  selector: 'app-eventdate-submit',
-  templateUrl: './eventdate-show.component.html',
-  styleUrls: ['./eventdate-show.component.scss']
+  selector: 'app-eventdate-show',
+  templateUrl: '../../calendario-edit/calendario-edit.component.html',
+  styleUrls: ['../../calendario-edit/calendario-edit.component.scss']
 })
-export class EventDateComponent implements OnInit {
+export class EventDateComponent extends CalendarioEditComponent implements OnInit {
         
-  @Input() public eventBooking : EventBooking = new EventBooking()
-
   optionDate: string;
 
   @Output() clickHide = new EventEmitter<void>();
@@ -20,10 +19,17 @@ export class EventDateComponent implements OnInit {
   }
   public Apply() {
 
-      this.clickReserve.next(this.eventBooking);
-      this.clickHide.next();
+      this.eventBooking.Options=[];
+      this.eventBooking.HoursStart=[];
+      this.eventBooking.HoursEnd=[];
 
- 
+      this.periodos.forEach( p=> {
+        this.eventBooking.Options.push(p.option);
+        this.eventBooking.HoursStart.push(p.horaInicio);
+        this.eventBooking.HoursEnd.push(p.horaFim);
+      })
+      this.clickReserve.next(this.eventBooking);
+      this.clickHide.next(); 
   }
 
 

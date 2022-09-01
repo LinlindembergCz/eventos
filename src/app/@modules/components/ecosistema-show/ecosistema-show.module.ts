@@ -17,9 +17,7 @@ import { FooterModule } from '../../../@layout/footer/footer.module';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxCaptchaModule,
-
-    
+    NgxCaptchaModule,    
   ],
   providers: []
 })

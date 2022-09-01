@@ -28,16 +28,16 @@ import { MeuEventoComponent } from './meuevento.component';
 import { BannersMeuEventoShowComponent } from './banners-meuevento-show/banners-meuevento-show.component';
 import { EventoSubmit } from './evento-submit/evento-submit.component';
 import { FuncionamentoShow } from './funcionamento-show/funcionamento-show.component';
-import { CalendarioEditComponent } from './calendario-edit/calendario-edit.component';
 
 import {AccordionModule} from 'primeng/accordion';
 import { CheckboxModule } from 'primeng/checkbox';
-
+import { CalendarioEditModule } from '../components/calendario-edit/calendario-edit.module'; 
 @NgModule({
   declarations: [MeuEventoComponent, BannersMeuEventoShowComponent, EventoSubmit,
-    FuncionamentoShow, CalendarioEditComponent
+    FuncionamentoShow
     ],
   imports: [
+    CalendarioEditModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
