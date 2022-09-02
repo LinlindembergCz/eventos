@@ -32,6 +32,7 @@ import { FuncionamentoShow } from './funcionamento-show/funcionamento-show.compo
 import {AccordionModule} from 'primeng/accordion';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CalendarioEditModule } from '../components/calendario-edit/calendario-edit.module'; 
+import { MultiSelectModule } from 'primeng/multiselect';
 @NgModule({
   declarations: [MeuEventoComponent, BannersMeuEventoShowComponent, EventoSubmit,
     FuncionamentoShow
@@ -60,7 +61,7 @@ import { CalendarioEditModule } from '../components/calendario-edit/calendario-e
     AccordionModule,
     DropdownModule,
     CheckboxModule,
-    VirtualScrollerModule,
+    MultiSelectModule,
     
   ],
   providers: []

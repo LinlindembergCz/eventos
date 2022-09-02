@@ -42,10 +42,19 @@
                         <p-checkbox name="{{periodo.name}}" value="Tarde" label="Tarde" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
                         <p-checkbox name="{{periodo.name}}" value="Noite" label="Noite" [(ngModel)]="periodos[periodo.index].option"></p-checkbox>
                         <p-radioButton name="{{periodo.name}}" value="Dia inteiro" label="Dia Inteiro"[(ngModel)]="periodos[periodo.index].option"></p-radioButton>
-                    </div>        
+                    </div>   
+                    <div><p></p></div>     
                     <div class="frameInputPeriodo">
-                        Início<p-inputMask width="5%" mask="99:99" name="horaInicio" [(ngModel)]="periodos[periodo.index].horaInicio"></p-inputMask>
-                        Fim <p-inputMask width="5%"  mask="99:99" name="horaFim"  [(ngModel)]="periodos[periodo.index].horaFim"></p-inputMask>
+                        <span class="p-float-label">
+                            <p-inputMask id="float-input" width="5%" mask="99:99" name="horaInicio" [(ngModel)]="periodos[periodo.index].horaInicio"></p-inputMask>
+                            <label for="float-input">Início</label>
+                        </span>
+                        <span class="p-float-label">
+                            <p-inputMask id="float-input" width="5%"  mask="99:99" name="horaFim"  [(ngModel)]="periodos[periodo.index].horaFim"></p-inputMask>
+                            <label for="float-input">Fim</label>
+                        </span>
+                        <!--Início<p-inputMask width="5%" mask="99:99" name="horaInicio" [(ngModel)]="periodos[periodo.index].horaInicio"></p-inputMask>-->
+
                     </div>    
                 </div>   
             </ng-template>

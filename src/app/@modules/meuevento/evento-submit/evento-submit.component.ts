@@ -38,10 +38,11 @@ export class EventoSubmit implements AfterViewInit, OnInit  {
         ];
 
         this.tiposEnvento = [
-            {name: 'Escolha tipo de evento', code: '0'},
-            {name: 'Tipo evento 1', code: '1'},
-            {name: 'Tipo evento 2', code: '2'},
-            {name: 'Tipo evento 3', code: '3'},
+            
+            {name: 'Workshop', code: '1'},
+            {name: 'Curso', code: '2'},
+            {name: 'Evento Fechado', code: '3'},
+            {name: 'Outros', code: '4'},
         ]
     }
 
@@ -75,4 +76,10 @@ export class EventoSubmit implements AfterViewInit, OnInit  {
     {
        this.activeIndex = index-1;
     }
+
+    send()
+    {
+
+    }
+
 }
