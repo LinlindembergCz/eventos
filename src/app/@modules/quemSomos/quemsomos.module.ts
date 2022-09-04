@@ -20,18 +20,19 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { DialogModule } from 'primeng/dialog';
 import { RadioButtonModule} from 'primeng/radiobutton';
 import { QuemSomosComponent } from './quemsomos.component';
-import { BannersQuemSomosShowComponent} from './banners-quemsomos-show/banners-quemsomos-show.component';
 import { NaPraticaShowComponent} from './napratica-show/na-pratica-show.component';
 import { EspacoShowComponent} from './espaco-show/espaco-show.component';
 import { EntendaSebraelabShowComponent} from './entenda-sebraelab-show/entenda-sebraelab-show.component';
 import  {ContatoSubmitModule} from '../components/contato-submit/contato-submit.module';
 import  {EcoSistemaShowModule} from '../components/ecosistema-show/ecosistema-show.module';
+import { BannersShowModule } from '../components/banners-show/banners-show.module';
 
 @NgModule({
-  declarations: [QuemSomosComponent, BannersQuemSomosShowComponent,NaPraticaShowComponent,
+  declarations: [QuemSomosComponent, NaPraticaShowComponent,
     EspacoShowComponent, EntendaSebraelabShowComponent
     ],
   imports: [
+    BannersShowModule,
     EcoSistemaShowModule,
     ContatoSubmitModule,
     CommonModule,

@@ -4,22 +4,18 @@ import { IndexComponent } from './pages/index/index.component';
 import { HomeRountingModule } from './home-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgPrimeExportsModule } from 'src/app/@bootstrap/scripts/ngprime.exports';
-import { BannersHomeShowComponent } from './banners-home-show/banners-home-show.component';
+import { BannersShowComponent } from '../components/banners-show/banners-show.component';
 import { SebraelabShowComponent } from '../components/sebraelab-show/sebraelab-show.component';
 import { ConteudoShowComponent } from '../components/conteudo-show/conteudo-show.component';
 import { EventoslabShowComponent } from '../components/eventoslab-show/eventoslab-show.component';
 import { ReserveSubmitComponent } from '../components/reserve-submit/reserve-submit.component';
-import { ContatoSubmitComponent } from '../components/contato-submit/contato-submit.component';
-import { EcosistemaShowComponent } from '../components/ecosistema-show/ecosistema-show.component';
 import { EventDateComponent } from '../components/reserve-submit/components/eventDate-show.component'; 
 import { CalendarioEditModule } from '../components/calendario-edit/calendario-edit.module'; 
-
+import { BannersShowModule } from '../components/banners-show/banners-show.module'; 
 
 
 import { FooterModule } from '../../@layout/footer/footer.module';
 import { HeaderModule } from '../../@layout/header/header.module';
-
-
 
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { CardModule } from 'primeng/card';
@@ -43,11 +39,12 @@ import { CheckboxModule } from 'primeng/checkbox';
 
 @NgModule({
   declarations: [IndexComponent, 
-     BannersHomeShowComponent,SebraelabShowComponent, ConteudoShowComponent,
+     SebraelabShowComponent, ConteudoShowComponent,
      EventoslabShowComponent, ReserveSubmitComponent,
-     EventDateComponent
+     EventDateComponent,
     ],
   imports: [
+    BannersShowModule,
     CalendarioEditModule,
     EcoSistemaShowModule,
     ContatoSubmitModule,
