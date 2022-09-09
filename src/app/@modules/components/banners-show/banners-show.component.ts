@@ -18,6 +18,8 @@ export class BannersShowComponent implements OnInit {
   @Input() path: string ="assets/data";
   @Input() fileJson: string ="banners.json";
   @Input() fileName: string="";
+
+  @Input() images: string[]=[];
   
 
 
